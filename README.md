@@ -1,6 +1,7 @@
 # jlibra Spring Boot Starter
 
-Integrate [jlibra](https://github.com/ketola/jlibra) into your Spring Boot applications via Spring's dependency injection and Spring Boots external configuration and Actuator functionality.
+Integrate [jlibra](https://github.com/ketola/jlibra) into your Spring Boot applications via Spring's dependency injection and Spring Boots external configuration and Actuator functionality.  
+_This is basically a copy with search/replace of [web3j-spring-boot-starter](https://github.com/web3j/web3j-spring-boot-starter)_
 
 ## Usage
 
