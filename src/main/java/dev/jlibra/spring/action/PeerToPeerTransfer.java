@@ -1,6 +1,7 @@
 package dev.jlibra.spring.action;
 
 import admission_control.AdmissionControlOuterClass.AdmissionControlStatus;
+import com.google.protobuf.ByteString;
 import dev.jlibra.JLibra;
 import dev.jlibra.KeyUtils;
 import dev.jlibra.admissioncontrol.query.ImmutableGetAccountState;
@@ -38,28 +39,10 @@ public class PeerToPeerTransfer {
                 .maxGasAmount(validMaxGasAmount)
                 .gasUnitPrice(validGasUnitPrice)
                 .expirationTime(10000)
-                .program(ImmutableProgram.builder().code(Move.peerToPeerTransfer()).addAllArguments(asList(addressArgument, amountArgument)).build()).build();
+                .program(ImmutableProgram.builder().code(ByteString.copyFrom(Move.peerToPeerTransferAsBytes())).addAllArguments(asList(addressArgument, amountArgument)).build()).build();
 
         SubmitTransactionResult result = jLibra.getAdmissionControl().submitTransaction(publicKey, privateKey,
                 transaction);
-        return new PeerToPeerTransferReceipt(result);
-    }
-
-    public PeerToPeerTransferReceipt transferFunds(String toAddress, long amountInMicroLibras, ExtendedPrivKey extendedPrivKey, long gasUnitPrice, long maxGasAmount) {
-        U64Argument amountArgument = new U64Argument(amountInMicroLibras);
-        AddressArgument addressArgument = new AddressArgument(Hex.decode(toAddress));
-
-        long validMaxGasAmount = (maxGasAmount == -1) ? jLibra.getMaxGasAmount() : maxGasAmount;
-        long validGasUnitPrice = (gasUnitPrice == -1) ? jLibra.getGasUnitPrice() : gasUnitPrice;
-
-        Transaction transaction = ImmutableTransaction.builder()
-                .sequenceNumber(fetchLatestSequenceNumber(Hex.decode(extendedPrivKey.getAddress())))
-                .maxGasAmount(validMaxGasAmount)
-                .gasUnitPrice(validGasUnitPrice)
-                .expirationTime(10000)
-                .program(ImmutableProgram.builder().code(Move.peerToPeerTransfer()).addAllArguments(asList(addressArgument, amountArgument)).build()).build();
-
-        SubmitTransactionResult result = jLibra.getAdmissionControl().submitTransaction(extendedPrivKey, transaction);
         return new PeerToPeerTransferReceipt(result);
     }
 

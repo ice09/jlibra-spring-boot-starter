@@ -40,11 +40,11 @@ For example, add the configuration values to a file `application.properties` nex
 
 ```properties
 jlibra.service-url=ad.testnet.libra.org
-jlibra.service-port=80
+jlibra.service-port=8000
 jlibra.faucet-url=faucet.testnet.libra.org
 jlibra.faucet-port=80
-jlibra.gas-unit-price=0
-jlibra.max-gas-amount=10000
+jlibra.gas-unit-price=5
+jlibra.max-gas-amount=600000
 ```
 
 ## Predefined Actions
