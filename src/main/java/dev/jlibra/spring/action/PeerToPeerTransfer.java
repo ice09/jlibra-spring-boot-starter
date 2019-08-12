@@ -9,7 +9,6 @@ import dev.jlibra.admissioncontrol.query.ImmutableGetAccountState;
 import dev.jlibra.admissioncontrol.query.ImmutableQuery;
 import dev.jlibra.admissioncontrol.query.UpdateToLatestLedgerResult;
 import dev.jlibra.admissioncontrol.transaction.*;
-import dev.jlibra.mnemonic.ExtendedPrivKey;
 import dev.jlibra.move.Move;
 import mempool.MempoolStatus.MempoolAddTransactionStatus;
 import org.bouncycastle.util.encoders.Hex;
