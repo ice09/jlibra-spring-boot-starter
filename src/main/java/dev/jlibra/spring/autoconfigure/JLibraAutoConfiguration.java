@@ -2,6 +2,7 @@ package dev.jlibra.spring.autoconfigure;
 
 import dev.jlibra.JLibra;
 import dev.jlibra.spring.actuate.JLibraHealthIndicator;
+import dev.jlibra.util.JLibraUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,5 +52,11 @@ public class JLibraAutoConfiguration {
     @ConditionalOnBean(JLibra.class)
     JLibraHealthIndicator jlibraHealthIndicator(JLibra jlibra) {
         return new JLibraHealthIndicator(jlibra);
+    }
+
+    @Bean
+    @ConditionalOnBean(JLibra.class)
+    JLibraUtil jlibraUtil(JLibra jlibra) {
+        return new JLibraUtil(jlibra);
     }
 }

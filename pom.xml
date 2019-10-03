@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.jlibra</groupId>
     <artifactId>jlibra-spring-boot-starter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.4.1-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
@@ -15,12 +15,17 @@
         <dependency>
             <groupId>dev.jlibra</groupId>
             <artifactId>jlibra-core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.4.0</version>
         </dependency>
         <dependency>
             <groupId>dev.jlibra</groupId>
             <artifactId>jlibra-grpc</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.konghq</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>2.3.14</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
