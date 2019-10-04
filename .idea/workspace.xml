@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119d4405-1baf-4a40-8d8a-8b8faf6c8e8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_konghq_unirest_java_2_3_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dev_jlibra_jlibra_core_0_0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dev_jlibra_jlibra_core_0_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dev_jlibra_jlibra_grpc_0_0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dev_jlibra_jlibra_grpc_0_4_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,6 +26,13 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libra-message-signing" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -83,6 +103,15 @@
       <updated>1563919676872</updated>
       <workItem from="1564469978873" duration="743000" />
       <workItem from="1564570336932" duration="687000" />
+      <workItem from="1564573283759" duration="156000" />
+      <workItem from="1564995128659" duration="772000" />
+      <workItem from="1564995965417" duration="3247000" />
+      <workItem from="1569320490708" duration="1649000" />
+      <workItem from="1569417499948" duration="94000" />
+      <workItem from="1569417747181" duration="3436000" />
+      <workItem from="1569828047555" duration="48000" />
+      <workItem from="1570044214270" duration="1085000" />
+      <workItem from="1570046258817" duration="7998000" />
     </task>
     <task id="LOCAL-00001" summary="Changed properties, use different binary format.">
       <created>1564571014703</created>
@@ -91,7 +120,28 @@
       <option name="project" value="LOCAL" />
       <updated>1564571014703</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed properties, use different binary format.">
+      <created>1564573332603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564573332603</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix expiration time and latest sequence number state retrieval.">
+      <created>1564995865784</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564995865784</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactor for compatibility with 0.4.0 jlibra version">
+      <created>1570131207178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570131207178</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +162,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed properties, use different binary format." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed properties, use different binary format." />
+    <MESSAGE value="Fix expiration time and latest sequence number state retrieval." />
+    <MESSAGE value="Refactor for compatibility with 0.4.0 jlibra version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor for compatibility with 0.4.0 jlibra version" />
   </component>
   <component name="masterDetails">
     <states>
